@@ -28,7 +28,7 @@
 <script src="../../../_static/clipboard.min.js"></script>
 <script src="../../../_static/copybutton.js"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-<script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+<script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
 <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
 <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -1278,7 +1278,7 @@
 <!-- Download raw file -->
 <a class="dropdown-buttons" href="../../../_sources/tutorials/W1D1_ModelTypes/student/W1D1_Tutorial4.ipynb"><button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" title="Download source file" type="button">.ipynb</button></a>
 <!-- Download PDF via print -->
-<button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" id="download-print" onclick="window.print()" title="Print to PDF" type="button">.pdf</button>
+<button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" id="download-print" onclick="printPdf(this)" title="Print to PDF" type="button">.pdf</button>
 </div>
 </div>
 <!-- Source interaction buttons -->
@@ -1294,7 +1294,7 @@
 <!-- Launch buttons -->
 </div>
 <!-- Table of contents -->
-<div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="d-none d-md-block col-md-2 bd-toc show noprint">
 <div class="tocsection onthispage pt-5 pb-3">
 <i class="fas fa-list"></i> Contents
             </div>
@@ -1336,6 +1336,51 @@
 </div>
 <div class="row" id="main-content">
 <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+<!-- Table of contents that is only displayed when printing the page -->
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Tutorial 4: Model Dicussions</h1>
+<!-- Table of contents -->
+<div id="print-main-content">
+<div id="jb-print-toc">
+<div>
+<h2> Contents </h2>
+</div>
+<nav aria-label="Page">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#">
+   Tutorial 4: Model Dicussions
+  </a>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-objectives">
+   Tutorial Objectives
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#tutorial-slides">
+     Tutorial slides
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry">
+<a class="reference internal nav-link" href="#section-1-model-discussions">
+   Section 1: Model discussions
+  </a>
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#think-1-model-discussions">
+     Think! 1: Model discussions
+    </a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div>
 <p><a href="https://colab.research.google.com/github/NeuromatchAcademy/course-content/blob/master/tutorials/W1D1_ModelTypes/student/W1D1_Tutorial4.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 <div class="section" id="tutorial-4-model-dicussions">
@@ -1429,14 +1474,12 @@
 </div>
 </div>
 <footer class="footer">
-<div class="container">
 <p>
-        
-          By Neuromatch<br/>
-        
-            © Copyright 2021.<br/>
+    
+      By Neuromatch<br/>
+    
+        © Copyright 2021.<br/>
 </p>
-</div>
 </footer>
 </main>
 </div>
