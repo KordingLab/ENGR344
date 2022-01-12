@@ -4,8 +4,6 @@
 
 **Prerequisites**: Some knowledge of Python
 
-# Course materials
-
 # Course outline
 * W0-1: Why did this happen? Causality
 * W2: Why do we need models? Types of models and how to fit them to data
