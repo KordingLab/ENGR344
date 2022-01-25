@@ -12,7 +12,7 @@
 <link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
 <link href="../../../_static/pygments.css" rel="stylesheet" type="text/css">
-<link href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" rel="stylesheet" type="text/css">
+<link href="../../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" rel="stylesheet" type="text/css">
 <link href="../../../_static/togglebutton.css" rel="stylesheet" type="text/css">
 <link href="../../../_static/copybutton.css" rel="stylesheet" type="text/css">
 <link href="../../../_static/mystnb.css" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
 <script src="../../../_static/clipboard.min.js"></script>
 <script src="../../../_static/copybutton.js"></script>
 <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-<script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+<script src="../../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
 <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
 <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -53,7 +53,12 @@
 <div class="container-fluid" id="banner"></div>
 <div class="container-xl">
 <div class="row">
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input aria-label="Toggle navigation sidebar" class="sidebar-toggle" id="__navigation" name="__navigation" type="checkbox"/>
+<label class="overlay" for="__navigation">
+<div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation" id="site-navigation">
 <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="../../../index.html">
 <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -106,7 +111,7 @@
 <a class="reference internal" href="../../TechnicalHelp/tech_intro.html">
    Technical Help
   </a>
-<input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+<input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox">
 <label for="toctree-checkbox-2">
 <i class="fas fa-chevron-down">
 </i>
@@ -140,7 +145,7 @@
     </a>
 </li>
 </ul>
-</li>
+</input></li>
 </ul>
 <p class="caption">
 <span class="caption-text">
@@ -1263,16 +1268,19 @@
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 </div>
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
 <div class="topbar container-xl fixed-top">
 <div class="topbar-contents row">
 <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
 <div class="col pl-md-4 topbar-main">
-<button aria-controls="site-navigation" aria-expanded="true" aria-label="Toggle navigation" class="navbar-toggler ml-0" data-placement="left" data-target=".site-navigation" data-toggle="tooltip" id="navbar-toggler" title="Toggle navigation" type="button">
+<div class="topbar-left">
+<label class="nav-toggle-button" for="__navigation">
+<div class="visually-hidden">Toggle navigation</div>
 <i class="fas fa-bars"></i>
-<i class="fas fa-arrow-left"></i>
-<i class="fas fa-arrow-up"></i>
-</button>
+</label>
+</div>
 <div class="dropdown-buttons-trigger">
 <button aria-label="Download this page" class="btn btn-secondary topbarbtn" id="dropdown-buttons-trigger"><i class="fas fa-download"></i></button>
 <div class="dropdown-buttons">
@@ -1614,7 +1622,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "9a7446aba227489081740cd3a3ea98ac"}
+{"version_major": 2, "version_minor": 0, "model_id": "0c53ec44b9ca457fabab9502da95a811"}
 </script></div>
 </div>
 </div>
@@ -2468,12 +2476,12 @@ shape input_test 	 torch.Size([10000, 784])
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2165</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2297</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">runSGD</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_train</span><span class="p">,</span> <span class="n">input_test</span><span class="p">,</span> <span class="n">n_epochs</span><span class="o">=</span><span class="n">n_epochs</span><span class="p">,</span>
 <span class="ne">----&gt; </span><span class="mi">5</span>        <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
 
-<span class="nn">/tmp/ipykernel_2165/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
+<span class="nn">/tmp/ipykernel_2297/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
 <span class="g g-Whitespace">    </span><span class="mi">586</span> 
 <span class="g g-Whitespace">    </span><span class="mi">587</span>       <span class="n">output_train</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
 <span class="ne">--&gt; </span><span class="mi">588</span>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">output_train</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span>
@@ -2610,35 +2618,32 @@ shape input_test 	 torch.Size([10000, 784])
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Epoch 	 Loss train 	 Loss test
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/10	 0.1891		 0.1888
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1/10	 0.1849		 0.1846
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/10	 0.1770		 0.1770
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2/10	 0.1730		 0.1732
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3/10	 0.1700		 0.1703
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3/10	 0.1671		 0.1677
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4/10	 0.1655		 0.1661
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4/10	 0.1638		 0.1649
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5/10	 0.1627		 0.1634
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5/10	 0.1621		 0.1633
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6/10	 0.1606		 0.1617
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7/10	 0.1589		 0.1603
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6/10	 0.1595		 0.1612
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2165</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_2297</span><span class="o">/</span><span class="mf">285641839.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">runSGD</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">input_train</span><span class="p">,</span> <span class="n">input_test</span><span class="p">,</span> <span class="n">n_epochs</span><span class="o">=</span><span class="n">n_epochs</span><span class="p">,</span>
 <span class="ne">----&gt; </span><span class="mi">5</span>        <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
 
-<span class="nn">/tmp/ipykernel_2165/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
+<span class="nn">/tmp/ipykernel_2297/3487241110.py</span> in <span class="ni">runSGD</span><span class="nt">(net, input_train, input_test, criterion, n_epochs, batch_size, verbose)</span>
 <span class="g g-Whitespace">    </span><span class="mi">588</span>       <span class="n">loss</span> <span class="o">=</span> <span class="n">loss_fn</span><span class="p">(</span><span class="n">output_train</span><span class="p">,</span> <span class="n">batch</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">589</span>       <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
 <span class="ne">--&gt; </span><span class="mi">590</span>       <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
