@@ -4,6 +4,9 @@
 
 **Prerequisites**: Some knowledge of Python
 
+See Due Dates Calender:
+[<img src="./tutorials/static_344/Google_Calendar_icon_(2020).png" alt="drawing" width="30"/>](https://calendar.google.com/calendar/embed?src=356b9d2nspjttvgbb3tvgk2f58%40group.calendar.google.com&ctz=America%2FNew_York)
+
 # Course outline
 * W0-1: Why did this happen? Causality
 * W2: Why do we need models? Types of models and how to fit them to data
